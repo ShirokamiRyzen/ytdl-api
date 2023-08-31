@@ -6,3 +6,4 @@ yt_dlp
 pytest
 httpx
 pytest-mock
+python-lsp-server
