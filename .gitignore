@@ -1,0 +1,7 @@
+*.pye
+*.egg-info/
+__pycache__/
+nohup.out
+.vscode/
+Pipfile.lock
+yt-dlp-api.service

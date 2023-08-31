@@ -1,0 +1,14 @@
+[Unit]
+Description=yt-dlp-api
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+User=lee
+Restart=always
+Type=simple
+WorkingDirectory=/data/yt-dlp-api
+ExecStart=/home/lee/.local/bin/pipenv run gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app --error-logfile /data/yt-dlp-api/error_log.txt
+
+[Install]
+WantedBy=multi-user.target
