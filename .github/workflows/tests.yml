@@ -18,11 +18,11 @@ jobs:
         run: pip install pipenv --user
       - name: Setup Python virtual environment and install dependencies
         run: |
-          PATH=$PATH:/home/peter/.local/bin
+          PATH=$PATH:/home/ShirokamiRyzen/.local/bin
           pipenv install
       - name: Setup Python virtual environment and install development dependencies
         run: |
-          PATH=$PATH:/home/peter/.local/bin
+          PATH=$PATH:/home/ShirokamiRyzen/.local/bin
           pipenv install --dev
       - name: Run tests
         run: |
